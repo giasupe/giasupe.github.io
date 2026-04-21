@@ -1,0 +1,58 @@
+html {
+    background-color: #18191B;
+}
+
+a {
+    color: skyblue;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+h1,
+p {
+    color: #FFFFFF;
+    font-family: "Ludica Sans Unicode";
+}
+
+.main {
+    line-height: normal;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.sub {
+    line-height: 0.8;
+    padding: 20px;
+    font-family: "Poppins";
+    font-size: 50px;
+    font-weight: 250;
+}
+
+.job {
+    line-height: 0.8;
+    padding: 0 0 0 100px;
+    font-family: "Poppins";
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.notes {
+    line-height: 0.8;
+    font-family: "Poppins";
+    font-size: 10px;
+    font-weight: 200;
+}
+
+.profile {
+    border: 1px solid #2D3034;
+    margin: 0px;
+    padding: 20px;
+    width: fit-content;
+    font-family: "Poppins";
+    font-weight: 300;
+}
+
+li {
+    margin-left: 10px;
+    color: #888;
+}
