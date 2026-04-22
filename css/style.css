@@ -1,5 +1,17 @@
 html {
     background-color: #18191B;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    padding: 10%;
+    box-sizing: border-box;
 }
 
 a {
@@ -8,19 +20,28 @@ a {
     font-weight: 400;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 h1,
 p {
     color: #FFFFFF;
     font-family: "Ludica Sans Unicode";
 }
 
-.main {
-    line-height: normal;
+.title {
+    position: fixed;
+    top: 15px;
+    left: 0px;
+    margin-top: -20px;
     font-size: 20px;
     font-weight: 100;
+    padding: 10px;
+    z-index: 1000;
 }
 
-.sub {
+.name {
     line-height: 0.8;
     padding: 20px;
     font-family: "Poppins";
@@ -29,14 +50,22 @@ p {
 }
 
 .job {
+    position: fixed;
+    top: 80px;
+    left: 0;
     line-height: 0.8;
-    padding: 0 0 0 100px;
+    text-align: center;
     font-family: "Poppins";
     font-size: 20px;
     font-weight: 200;
+    padding: 10px;
+    z-index: 1000;
 }
 
 .notes {
+    position: fixed;
+    top: 98px;
+    left: 150px;
     line-height: 0.8;
     font-family: "Poppins";
     font-size: 10px;
@@ -44,15 +73,24 @@ p {
 }
 
 .profile {
-    border: 1px solid #2D3034;
-    margin: 0px;
-    padding: 20px;
+    position: fixed;
     width: fit-content;
+    padding-left: 10px;
+    padding-right: 10px;
+    left: 0px;
+    bottom: 0px;
     font-family: "Poppins";
     font-weight: 300;
 }
 
-li {
-    margin-left: 10px;
-    color: #888;
+.rikai {
+    position: fixed;
+    top: 150px;
+    left: 10px;
+    border: #ffffff solid 1px;
+    border-radius: 10px;
+    width: 90px;
+    height: 65px;
+    padding-left: 40px;
+    white-space: nowrap;
 }
