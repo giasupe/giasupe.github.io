@@ -87,4 +87,9 @@ a.exchange:hover {
     line-height: 50px;
 }
 
+.sns-links {
+    
+    gap: 20px;
+}
+
 /* works.html */
