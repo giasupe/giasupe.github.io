@@ -1,1 +1,1 @@
-const link = document.getElementById('#copy-email');
+const link = document.getElementById('copy-email');
