@@ -20,14 +20,19 @@ a {
     color: skyblue;
     text-decoration: none;
     font-weight: 400;
-    text-decoration: underline 1px;
-}
-
-a:hover {
     text-decoration: none;
 }
 
-h1,li {
+a.sns-link .link-text {
+    text-decoration: underline 1px;
+}
+
+a.sns-link .link-text:hover {
+    text-decoration: none;
+}
+
+h1,
+li {
     margin: 10px;
     color: #FFFFFF;
     font-family: "Poppins";
@@ -108,6 +113,20 @@ a.exchange:hover {
     line-height: 50px;
 }
 
+a.sns-link::after {
+    content: "open_in_new";
+    font-family: 'Material Symbols Outlined';
+    font-size: 14px;
+    margin-left: 2px;
+}
+
+a#copy-email::after {
+    content: "content_copy";
+    font-family: 'Material Symbols Outlined';
+    font-size: 14px;
+    margin-left: 2px;
+}
+
 /* works.html */
 
 .main-text.works {
@@ -125,12 +144,14 @@ button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
-  -webkit-appearance: button;
-  appearance: button;
+    -webkit-appearance: button;
+    appearance: button;
 }
 
 [type="search"] {
-  -webkit-appearance: textfield; /* 1 */
-  appearance: textfield;
-  outline-offset: -2px; /* 2 */
+    -webkit-appearance: textfield;
+    /* 1 */
+    appearance: textfield;
+    outline-offset: -2px;
+    /* 2 */
 }
