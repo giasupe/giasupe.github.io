@@ -1,21 +1,19 @@
 html {
     background-color: #18191B;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    overflow: auto;
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
 
 body {
-    height: 100vh;
-    margin: 0;
     padding: 20px;
     box-sizing: border-box;
-    overflow: auto;
     -ms-overflow-style: none;
     scrollbar-width: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    display: none;
 }
 
 a {
@@ -97,8 +95,9 @@ a.exchange:hover {
     margin-left: 100px;
     text-align: left;
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 350;
     line-height: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .sns-link {
@@ -112,9 +111,26 @@ a.exchange:hover {
 /* works.html */
 
 .main-text.works {
+    margin: 0px 0px 0px 0px;
     margin-left: 0px;
     text-align: center;
     font-size: 18px;
     font-weight: 300;
     line-height: 50px;
+}
+
+/* normalize.css */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  appearance: button;
+}
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  appearance: textfield;
+  outline-offset: -2px; /* 2 */
 }
