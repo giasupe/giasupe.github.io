@@ -86,7 +86,7 @@ a.exchange:hover {
 }
 
 .page-title {
-    margin: 100px 0px 80px 0px;
+    margin: 120px 0px 80px 0px;
     text-align: center;
     font-size: 40px;
     font-weight: 300;
@@ -112,8 +112,7 @@ a.exchange:hover {
 /* works.html */
 
 .main-text.works {
-    margin: 0px 0px 30px 0px;
-    margin-left: 100px;
+    margin-left: 0px;
     text-align: center;
     font-size: 18px;
     font-weight: 300;
