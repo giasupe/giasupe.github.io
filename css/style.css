@@ -3,6 +3,9 @@ html {
     height: 100vh;
     margin: 0;
     padding: 0;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 body {
@@ -10,13 +13,16 @@ body {
     margin: 0;
     padding: 20px;
     box-sizing: border-box;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 a {
     color: skyblue;
     text-decoration: none;
     font-weight: 400;
-    text-decoration: underline;
+    text-decoration: underline 1px;
 }
 
 a:hover {
@@ -26,7 +32,15 @@ a:hover {
 h1,li {
     margin: 10px;
     color: #FFFFFF;
-    font-family: "Poppins semi-bold";
+    font-family: "Poppins";
+    font-weight: 600;
+}
+
+h2 {
+    margin: 10px;
+    color: #FFFFFF;
+    font-family: "Poppins";
+    font-weight: 600;
 }
 
 p {
@@ -37,17 +51,16 @@ p {
 
 .title {
     position: fixed;
-    top: -20px;
-    left: 0px;
     width: 100%;
+    margin-top: -20px;
+    margin-left: -20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 20px;
-    font-weight: 100;
-    padding: 10px 10px 7px 20px;
+    font-weight: 200;
+    padding: 10px 10px 10px 30px;
     box-sizing: border-box;
-    z-index: 1000;
     background-color: darkslateblue;
 }
 
@@ -55,12 +68,13 @@ a.exchange {
     color: #FFFFFF;
     font-weight: 200;
     font-size: 14px;
-    margin-top: 6px;
+    margin-top: 5px;
     margin-left: auto;
     margin-right: 20px;
     border: #FFFFFF 1px solid;
     border-radius: 5px;
     padding: 0px 5px 1px 5px;
+    text-decoration: none;
 }
 
 a.exchange:hover {
@@ -87,9 +101,21 @@ a.exchange:hover {
     line-height: 50px;
 }
 
-.sns-links {
-    
-    gap: 20px;
+.sns-link {
+    margin: 100px 0px 30px 0px;
+    margin-left: 100px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 50px;
 }
 
 /* works.html */
+
+.main-text.works {
+    margin: 0px 0px 30px 0px;
+    margin-left: 100px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 50px;
+}
