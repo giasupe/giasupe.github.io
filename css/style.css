@@ -23,11 +23,11 @@ a {
     text-decoration: none;
 }
 
-a.sns-link .link-text {
+span.link-text {
     text-decoration: underline 1px;
 }
 
-a.sns-link .link-text:hover {
+a.sns-link:hover {
     text-decoration: none;
 }
 
@@ -111,6 +111,8 @@ a.exchange:hover {
     font-size: 18px;
     font-weight: 300;
     line-height: 50px;
+    border-bottom: 1px underline #e1e1e0;
+    cursor: pointer;
 }
 
 a.sns-link::after {
