@@ -23,14 +23,6 @@ a {
     text-decoration: none;
 }
 
-span.link-text {
-    text-decoration: underline 1px;
-}
-
-a.sns-link:hover {
-    text-decoration: none;
-}
-
 h1,
 li {
     margin: 10px;
@@ -111,18 +103,31 @@ a.exchange:hover {
     font-size: 18px;
     font-weight: 300;
     line-height: 50px;
-    border-bottom: 1px underline #e1e1e0;
     cursor: pointer;
+    text-decoration: none;
 }
 
-a.sns-link::after {
+.link-text {
+    text-decoration: none;
+}
+
+.link-label {
+    text-decoration: underline 1px;
+}
+
+.link-text::after {
     content: "open_in_new";
     font-family: 'Material Symbols Outlined';
     font-size: 14px;
     margin-left: 2px;
+    text-decoration: none;
 }
 
-a#copy-email::after {
+.link-label:hover {
+    text-decoration: none;
+}
+
+span#copy-email::after {
     content: "content_copy";
     font-family: 'Material Symbols Outlined';
     font-size: 14px;
