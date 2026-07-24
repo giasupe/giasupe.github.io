@@ -1,18 +1,14 @@
-const textElement = document.getElementById('copy-email');
+const emailButton = document.getElementById('copy-email');
+const emailLabel = emailButton.querySelector('.link-label');
 
-function resetText() {
-    document.getElementById('copy-email').textContent = 'Email';
+function resetEmailText() {
+    emailLabel.textContent = 'Email';
 }
 
-function copyEmail() {
-    const email = 'giasupe.com@gmail.com';
-    navigator.clipboard.writeText(email);
-    document.getElementById('copy-email').textContent = 'Copied!';
-}
-textElement.addEventListener('click', copyEmail);
+emailButton.addEventListener('click', () => {
+    navigator.clipboard.writeText('giasupe.com@gmail.com');
+    emailLabel.textContent = 'Copied!';
+    setTimeout(resetEmailText, 1500);
+});
 
-function scaleImage() {
-    const image = document.getElementById('scale-image');
-    
-}
-document.getElementById('scale-image').addEventListener('click', scaleImage);
+resetEmailText();
