@@ -99,21 +99,16 @@ a.exchange:hover {
 }
 
 .sns-link {
-    margin: 100px 0px 30px 0px;
+    background: none;
+    border: none;
+    color: skyblue;
+    padding: 0;
+    margin-top: 20px;
     margin-left: 100px;
     font-size: 18px;
     font-weight: 300;
-    line-height: 50px;
+    text-decoration: none;
     cursor: pointer;
-    text-decoration: none;
-}
-
-.link-text {
-    text-decoration: none;
-}
-
-.link-label {
-    text-decoration: none;
 }
 
 #copy-email .link-label,
@@ -135,11 +130,10 @@ a.exchange:hover {
 }
 
 
-span#copy-email::after {
+#copy-email::after {
     content: "content_copy";
     font-family: 'Material Symbols Outlined';
     font-size: 14px;
-    margin-left: 2px;
 }
 
 /* works.html */
@@ -149,9 +143,6 @@ span#copy-email::after {
     font-size: 15px;
     font-weight: 300;
     line-height: 25px;
-}
-a.sns-link.works {
-    line-height: 0;
 }
 
 h2.projects {
@@ -177,6 +168,14 @@ h3 {
     height: 1px;
     background-color: #e1e1e0;
     margin: 30px 0;
+}
+
+.images:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+    filter: brightness(0.8);
+    transition: filter 0.2s ease-in-out;
 }
 
 /* normalize.css */
