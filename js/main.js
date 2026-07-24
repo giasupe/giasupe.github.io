@@ -12,3 +12,13 @@ emailButton.addEventListener('click', () => {
 });
 
 resetEmailText();
+
+const ClockImage = document.getElementById('clock');
+
+function openClockPage() {
+    window.open('https://giasupe.github.io/clock/', '_blank', 'noopener noreferrer');
+}
+
+ClockImage.addEventListener('click', () => {
+    openClockPage();
+});
