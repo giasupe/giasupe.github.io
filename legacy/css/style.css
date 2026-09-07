@@ -1,0 +1,258 @@
+:root {
+  --color-background: #18191B;
+  --color-header: darkslateblue;
+  --color-heading: #FFFFFF;
+  --color-text: #e1e1e0;
+  --color-link: skyblue;
+  --content-width: 720px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: var(--color-background);
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  color: var(--color-text);
+  font-family: "Poppins", "Segoe UI", sans-serif;
+}
+
+a {
+  color: var(--color-link);
+  font-weight: 400;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-heading);
+  font-family: "Poppins", "Segoe UI", sans-serif;
+  font-weight: 600;
+}
+
+p {
+  margin: 10px 0;
+  color: var(--color-text);
+}
+
+.title {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  padding: 10px 30px;
+  background-color: var(--color-header);
+}
+
+.title h1 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.page-nav {
+  margin-left: auto;
+}
+
+a.exchange {
+  display: inline-block;
+  margin-top: 5px;
+  padding: 0 5px 1px;
+  border: 1px solid var(--color-heading);
+  border-radius: 5px;
+  color: var(--color-heading);
+  font-size: 14px;
+  font-weight: 200;
+}
+
+a.exchange:hover,
+a.exchange:focus-visible {
+  border-color: #000000;
+  background-color: var(--color-heading);
+  color: #000000;
+  font-weight: 300;
+}
+
+.page-title {
+  margin: 120px 0 80px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.main-text {
+  width: min(100%, var(--content-width));
+  margin: 0 auto 30px;
+  padding: 0 20px;
+  font-size: clamp(1rem, 2vw, 1.125rem);
+  line-height: 2;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: min(100%, var(--content-width));
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.sns-link {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  color: var(--color-link);
+  font: inherit;
+  font-size: 18px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.link-text,
+.link-label {
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+}
+
+.link-text::after {
+  content: "open_in_new";
+  margin-left: 2px;
+  font-family: "Material Symbols Outlined";
+  font-size: 14px;
+}
+
+.sns-link:hover .link-text,
+.sns-link:hover .link-label,
+.sns-link:focus-visible .link-text,
+.sns-link:focus-visible .link-label {
+  text-decoration-line: none;
+}
+
+#copy-email::after {
+  content: "content_copy";
+  margin-left: 2px;
+  font-family: "Material Symbols Outlined";
+  font-size: 14px;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--color-link);
+  outline-offset: 4px;
+}
+
+/* works.html */
+
+.work-item {
+  width: min(100%, var(--content-width));
+  margin: 0 auto;
+}
+
+.work-item h3 {
+  margin: 10px 0 20px;
+  text-align: center;
+}
+
+.work-item > a {
+  display: block;
+  width: min(100%, 300px);
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.images {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.2s ease-in-out, filter 0.2s ease-in-out;
+}
+
+.work-item > a:hover .images,
+.work-item > a:focus-visible .images {
+  transform: scale(1.05);
+  filter: brightness(0.8);
+}
+
+.work-details {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 25px;
+}
+
+.box {
+  width: min(100%, var(--content-width));
+  margin: 30px auto;
+  border: 0;
+  border-top: 1px solid var(--color-text);
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 16px;
+  }
+
+  .title {
+    padding: 10px 16px;
+  }
+
+  .title h1 {
+    font-size: 18px;
+  }
+
+  a.exchange {
+    margin-top: 3px;
+    margin-right: 0;
+    font-size: 13px;
+  }
+
+  .page-title {
+    margin: 100px 0 50px;
+    font-size: clamp(2rem, 10vw, 2.5rem);
+  }
+
+  .main-text,
+  .contact-links {
+    padding: 0;
+  }
+
+  .main-text {
+    font-size: 16px;
+    line-height: 1.9;
+  }
+
+  .work-details {
+    padding: 0 16px;
+    font-size: 14px;
+    line-height: 1.9;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
