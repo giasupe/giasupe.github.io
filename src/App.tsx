@@ -1,4 +1,4 @@
-import clockImage from "../images/github_clock.png";
+import clockImage from "./assets/github_clock.png";
 
 const emailAddress = "giasupe.com@gmail.com";
 
