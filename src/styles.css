@@ -23,7 +23,7 @@ body {
   margin: 0;
   background-color: var(--background);
   color: var(--text);
-  font-family: "Poppins", "Segoe UI", sans-serif;
+  font-family: "Roboto Mono", "Cascadia Mono", "BIZ UDGothic", "MS Gothic", monospace;
   line-height: 1.8;
 }
 
